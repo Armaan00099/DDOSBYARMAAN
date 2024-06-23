@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#By @venomXCRAZY
+#By @Khan_armaan_12
 
 import telebot
 import subprocess
@@ -8,10 +8,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('TOKEN')
+bot = telebot.TeleBot('7344015135:AAFkrsKKptDr80fh8sEtojvDu2H_qngA3sI')
 
 # Admin user IDs
-admin_id = ["YOUR ID"]
+admin_id = ["6710024903"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -246,9 +246,9 @@ def handle_bgmi(message):
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}"
         else:
-            response = "Usage :- /bgmi <target> <port> <time>\nBy @venomXcrazy"  # Updated command syntax
+            response = "Usage :- /bgmi <target> <port> <time>\nBy @Khan_armaan_12"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy @venomXcrazy"
+        response = "You Are Not Authorized To Use This Command.\nBy @Khan_armaan_12"
 
     bot.reply_to(message, response)
 
